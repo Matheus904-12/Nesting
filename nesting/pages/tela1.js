@@ -17,7 +17,7 @@ export default function Tela1({ textoPronto, textoPronto2 }) {
 
     return (
         <View style={styles.container}>
-            <Text style={styles.title}>Tela 1</Text>
+            <Text style={styles.title}>Digite alguma palavra</Text>
             <TextInput
                 placeholder='Digite algo aqui'
                 style={styles.input}

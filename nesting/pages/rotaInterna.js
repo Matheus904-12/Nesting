@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
 import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
-import { Ionicons } from '@expo/vector-icons';
+import { Fontisto } from '@expo/vector-icons';
+import { MaterialIcons } from '@expo/vector-icons';
+
 import Tela1 from './tela1';
 import Tela2 from './tela2';
 import Tela3 from './tela3';
@@ -33,7 +35,7 @@ export default function RotaInterna() {
                     tabBarShowLabel: false,
                     headerShown: false,
                     tabBarIcon: ({ focused }) => (
-                        <Ionicons size={focused ? 25 : 20} color={"#000"} name={focused ? "home" : "home-outline"} />
+                        <MaterialIcons name="input" size={24} color="black" />
                     ),
                 }}
             >
@@ -46,7 +48,7 @@ export default function RotaInterna() {
                     tabBarShowLabel: false,
                     headerShown: false,
                     tabBarIcon: ({ focused }) => (
-                        <Ionicons size={focused ? 25 : 20} color={"#000"} name={focused ? "lock-closed" : "lock-closed-outline"} />
+                        <MaterialIcons name="no-encryption-gmailerrorred" size={24} color="black" />
                     ),
                 }}
             />
@@ -56,8 +58,7 @@ export default function RotaInterna() {
                     tabBarShowLabel: false,
                     headerShown: false,
                     tabBarIcon: ({ focused }) => (
-                        <Ionicons size={focused ? 25 : 20} color={"#000"} name={focused ? "watch" : "watch-outline"} />
-                    ),
+                        <Fontisto name="preview" size={24} color="black" />                    ),
                 }}
             >
                 {() => <Tela3 texto={info1} texto2={info2} />}

@@ -4,7 +4,7 @@ import { StyleSheet, Text, View } from 'react-native';
 export default function Tela2() {
   return (
     <View style={styles.container}>
-      <Text style={styles.title}>Tela 2</Text>
+      <Text style={styles.title}>Sem função</Text>
       <StatusBar style="auto" />
     </View>
   );

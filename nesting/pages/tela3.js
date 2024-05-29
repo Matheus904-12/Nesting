@@ -5,7 +5,7 @@ import React from 'react';
 export default function Tela3({ texto, texto2 }) {
   return (
     <View style={styles.container}>
-      <Text style={styles.title}>Tela 3</Text>
+      <Text style={styles.title}>Visualização</Text>
       <Text style={styles.text}>{texto}</Text>
       <Text style={styles.text}>{texto2}</Text>
       <StatusBar style="auto" />
